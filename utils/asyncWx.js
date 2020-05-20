@@ -87,19 +87,19 @@ export const showToast=({title})=>{
 // /**
 //  * promise 形式  login
 //  */
-// export const login=()=>{
-//   return new Promise((resolve,reject)=>{
-//     wx.login({
-//       timeout:10000,
-//       success: (res) => {
-//         resolve(res);
-//       },
-//       fail: (err) => {
-//         reject(err);
-//       }
-//     });
-//   })
-// }
+export const login=()=>{
+  return new Promise((resolve,reject)=>{
+    wx.login({
+      timeout:10000,
+      success: (res) => {
+        resolve(res);
+      },
+      fail: (err) => {
+        reject(err);
+      }
+    });
+  })
+}
 
 // /**
 //  * promise 形式的 小程序的微信支付
